@@ -1,0 +1,11 @@
+fs.readFile("data.txt", () => {
+
+    setTimeout(() => {
+        console.log("Timeout");
+    }, 0);
+
+    setImmediate(() => {
+        console.log("Immediate");
+    });
+
+});
